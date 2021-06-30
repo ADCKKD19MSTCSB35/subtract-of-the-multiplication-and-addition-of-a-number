@@ -1,0 +1,28 @@
+import java.util.*;
+class Demo
+{
+public static void main(String args[])
+{
+int m,n,r=0,sum=0;
+int k,mul=1,P;
+Scanner t=new Scanner(System.in);
+m=t.nextInt();
+n=m;
+while(m>0)
+{
+	r=m%10;
+	sum+=r;
+	m/=10;
+}
+while(n>0)
+{       k=n%10;
+	mul*=k;
+	n/=10;
+	
+}       P=mul-sum;
+	System.out.print(P);
+
+}
+}
+Input:234
+Output;15
